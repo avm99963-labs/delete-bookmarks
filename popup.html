@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    html {
+      min-width: 300px;
+      user-select: none;
+    }
+
+    #pass {
+      width: 200px;
+    }
+
+    #pass-error {
+      color: red;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="page-introduction">
+      <p><i>Por favor lea la siguiente información detenidamente.</i></p>
+      <p>El siguiente botón permite <b>eliminar TODOS los marcadores del navegador</b>. <b style="color: red;">Esta operación es IRREVERSIBLE</b>. Por favor proceda cautelosamente.</p>
+      <p>Se borrarán todos los marcadores (favoritos) sin excepción. Si este navegador se está sincronizando con navegadores de otros dispositivos, también se eliminarán los marcadores en los otros dispositivos.</p>
+      <p>Para eliminar todos los marcadores, escriba <code style="font-weight: bold;">Quiero eliminar todos los marcadores</code> en el siguiente cuadro de texto (manteniendo las letras en mayúsculas y en minúsculas), y haga clic en el botón.</p>
+      <p><input type="text" id="pass"> <button id="do">Proceder</button></p>
+      <p id="pass-error" style="display: none;">No se ha introducido el texto correctamente.</p>
+    </div>
+    <div id="page-performing-action" style="display: none;">
+      <p>Por favor, <b>no cierre esta ventana emergente</b> (no haga clic en ningún otro sitio con el ratón, puesto que de otra forma se cerrará esta ventana emergente).</p>
+      <p><progress id="progress"></p>
+    </div>
+    <div id="page-done" style="display: none;">
+      <p>Acción completada correctamente.</p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

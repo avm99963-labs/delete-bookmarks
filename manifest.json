@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Eliminar todos los marcadores",
+  "description": "Extensión que permite eliminar todos los marcadores del navegador.",
+  "version": "0.0.1",
+  "action": {
+    "default_icon": {
+      "16": "icons/16.png",
+      "24": "icons/24.png",
+      "32": "icons/32.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "24": "icons/24.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png",
+    "256": "icons/256.png"
+  },
+  "permissions": [
+    "bookmarks"
+  ]
+}
